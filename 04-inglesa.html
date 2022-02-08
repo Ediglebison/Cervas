@@ -1,48 +1,118 @@
 <!doctype html>
 <html lang="pt">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Escola cervejeira inglesa</title>
-  </head>
-  <body>
-    <header class="mx-auto" style="width: 75%;">
-      <!-- Menu superior-->
-      <nav class="nav justify-content-center">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="#sobre">Sobre</a>
-        <a class="nav-link" href="#posts">Postagens</a>
-        <a class="nav-link" href="contato.html">Contato</a>
-      </nav>
-    </header>
-    <!--post-->
-    <section class="mx-auto" style="width: 75%;">
-        <h2>
-          Escola cervejeira inglesa
-        </h2>
-        <img class="img-fluid img-thumbnail" src="img/04-inglesa.png" alt="Inglaterra">
-        <p>
-          Diferente da escola alemã, a Escola Inglesa, ou Britânica, tem por característica tradicional cervejas mais amargas e secas. <br>
-          <br>
-          Viva o lúpulo! <br>
-          <br>
-          As cervejas por lá é até hoje conhecida como Ale’s, que nada mais é do que cerveja de alta fermentação. <br>
-          <br>
-          Logo, são mais complexas no sabor que as Lagers alemãs, que tem o sabor mais arredondado. Elas também são mais amargas, mesmo nos estilos mais populares, e algumas levam doses de açúcar como fonte de carboidrato; interessante ressaltar que o açúcar não deixa a cerveja mais doce, e sim ajuda a aumentar o teor alcoólico da bebida, tornando-a mais seca, ideal para climas mais frios. <br>
-          <br>
-          Outra característica da Escola Inglesa é que as cervejas tendem a ser levemente descarbonatadas (com menos gás) e mais fortes em sabor, amargor e teor alcoólico. Os estilos mais comuns por lá são: Pale Ale, Porter, Stout, Barleywine, Bitter, Brown Ale e a famosa IPA (Indian Pale ALE). <br>
-          <br>
-          Mas, incomodados com a falta de opção e qualidade, fez-se um movimento em que hoje tem-se diversas cervejarias locais fazendo cervejas de alta qualidade e até inovadoras, como a escocesa Brewdog. <br>
-          <br>
-          Principais marcas <br>
-          <br>
-          Na Grã Bretanha, a tradição é beber cerveja em pubs. As marcas mais comuns aqui no Brasil são: Guinness, Murphys, Fuller’s e Newcastle. É interessante ao longo do século passado passou-se muito tempo com os variados estilos de cerveja quase extintos, sendo concentrado apenas em cervejas baratas e de baixa qualidade. <br>
-        </p>
-    </section>
-  </body>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Escola cervejeira inglesa</title>
+</head>
+
+<body>
+  <header class="mx-auto" style="width: 75%;">
+    <!-- Menu superior-->
+
+    <nav class="navbar navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <nav class="nav justify-content-center">
+          <a class="nav-link" href="#sobre">Sobre</a>
+          <a class="nav-link" href="#posts">Postagens</a>
+          <a class="nav-link" href="contato.html">Contato</a>
+        </nav>
+        <!-- Menu lateral-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Postagens recentes</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="01-historia.html">Conheça a história da cerveja</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="02-escolas.html">O que são escolas cervejeiras?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="03-alema.html">Escola cervejeira alemã</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="04-inglesa.html">Escola cervejeira inglesa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="05-belga.html">Escola cervejeira belga</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="06-americana.html">Escola cervejeira americana</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="07-pureza.html">Lei de pureza alemã: REINHEITSGEBOT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="08-cerveja.html">O que é CERVEJA?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="09-harmonizacao.html">Harmonização de cervejas e pratos do dia-a-dia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="10-fabricacao.html">Como fazer cerveja - O Processo de fabricação</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--post-->
+  <section class="mx-auto" style="width: 75%;">
+    <br>
+    <br>
+    <br>
+    <h2>
+      Escola cervejeira inglesa
+    </h2>
+    <img class="img-fluid img-thumbnail" src="img/04-inglesa.png" alt="Inglaterra" style="width:500px; height:auto">
+    <p>
+      Diferente da escola alemã, a Escola Inglesa, ou Britânica, tem por característica tradicional cervejas mais
+      amargas e secas. <br>
+      <br>
+      Viva o lúpulo! <br>
+      <br>
+      As cervejas por lá é até hoje conhecida como Ale’s, que nada mais é do que cerveja de alta fermentação. <br>
+      <br>
+      Logo, são mais complexas no sabor que as Lagers alemãs, que tem o sabor mais arredondado. Elas também são mais
+      amargas, mesmo nos estilos mais populares, e algumas levam doses de açúcar como fonte de carboidrato; interessante
+      ressaltar que o açúcar não deixa a cerveja mais doce, e sim ajuda a aumentar o teor alcoólico da bebida,
+      tornando-a mais seca, ideal para climas mais frios. <br>
+      <br>
+      Outra característica da Escola Inglesa é que as cervejas tendem a ser levemente descarbonatadas (com menos gás) e
+      mais fortes em sabor, amargor e teor alcoólico. Os estilos mais comuns por lá são: Pale Ale, Porter, Stout,
+      Barleywine, Bitter, Brown Ale e a famosa IPA (Indian Pale ALE). <br>
+      <br>
+      Mas, incomodados com a falta de opção e qualidade, fez-se um movimento em que hoje tem-se diversas cervejarias
+      locais fazendo cervejas de alta qualidade e até inovadoras, como a escocesa Brewdog. <br>
+      <br>
+      Principais marcas <br>
+      <br>
+      Na Grã Bretanha, a tradição é beber cerveja em pubs. As marcas mais comuns aqui no Brasil são: Guinness, Murphys,
+      Fuller’s e Newcastle. É interessante ao longo do século passado passou-se muito tempo com os variados estilos de
+      cerveja quase extintos, sendo concentrado apenas em cervejas baratas e de baixa qualidade. <br>
+    </p>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
